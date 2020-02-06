@@ -142,7 +142,7 @@ extension PresentationManager {
     }
 
     /// Removes the `alertController` from memory.
-    func cleanUp() {
+    public func cleanUp() {
         guard let updaterWindow = updaterWindow else { return }
         alertController?.hide(window: updaterWindow)
         alertController?.dismiss(animated: true, completion: nil)
