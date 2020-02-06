@@ -38,7 +38,7 @@ public class PresentationManager {
     var alertController: UIAlertController?
 
     /// The `UIWindow` instance that presents the `SirenViewController`.
-    private lazy var updaterWindow = createWindow()
+    public lazy var updaterWindow = createWindow()
 
     /// `PresentationManager`'s public initializer.
     ///
