@@ -53,7 +53,7 @@ public final class Siren: NSObject {
     private var alertPresentationDate: Date? = UserDefaults.alertPresentationDate
 
     /// The App Store's unique identifier for an app.
-    private var appID: Int?
+    public var appID: Int?
 
     /// The completion handler used to return the results or errors returned by Siren.
     private var resultsHandler: ResultsHandler?
@@ -189,7 +189,7 @@ private extension Siren {
     /// - Parameters:
     ///   - currentAppStoreVersion: The curren version of the app in the App Store.
     ///   - model: The iTunes Lookup Model.
-    func determineIfAlertPresentationRulesAreSatisfied(forCurrentAppStoreVersion currentAppStoreVersion: String, andModel model: Model) {
+    public func determineIfAlertPresentationRulesAreSatisfied(forCurrentAppStoreVersion currentAppStoreVersion: String, andModel model: Model) {
         // Did the user:
         // - request to skip being prompted with version update alerts for a specific version
         // - and is the latest App Store update the same version that was requested?
