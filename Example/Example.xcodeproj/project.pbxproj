@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5913ECF89C0DE3BEB22031BE /* Pods_Example_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3207656F9030B2912198AF2E /* Pods_Example_Tests.framework */; };
 		8E1635A91E6A0B9C0060CE27 /* SirenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE6C74C1E6A0AE100DBE454 /* SirenTests.swift */; };
+		8EA6AAB323F2424600283B43 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA6AAB223F2424600283B43 /* Default-568h@2x.png */; };
 		8EACA9711F380294003134CA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EACA9671F37F2D3003134CA /* LaunchScreen.xib */; };
 		8EACA9721F380294003134CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EACA9691F37F2D3003134CA /* Main.storyboard */; };
 		8EACA9731F380294003134CA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EACA96B1F37F2D3003134CA /* Images.xcassets */; };
@@ -48,6 +49,7 @@
 		5A65216266BE44478A3B3AEB /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.debug.xcconfig"; path = "Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		740DAA3321466F1ABE6CC37D /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		8E3A6C041D07CB6F00A8B7CF /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EA6AAB223F2424600283B43 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		8EACA9661F37F2D3003134CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EACA9681F37F2D3003134CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		8EACA96A1F37F2D3003134CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 		8EC391781A58B465001C121E = {
 			isa = PBXGroup;
 			children = (
+				8EA6AAB223F2424600283B43 /* Default-568h@2x.png */,
 				8EACA9651F37F2D3003134CA /* Example */,
 				8EE6C74A1E6A0AE100DBE454 /* Tests */,
 				8EC391821A58B465001C121E /* Products */,
@@ -264,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EACA9711F380294003134CA /* LaunchScreen.xib in Resources */,
+				8EA6AAB323F2424600283B43 /* Default-568h@2x.png in Resources */,
 				8EACA9721F380294003134CA /* Main.storyboard in Resources */,
 				8EACA9731F380294003134CA /* Images.xcassets in Resources */,
 			);
@@ -591,6 +595,80 @@
 				PRODUCT_NAME = Example;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8EF9F85D224EACA500B20545 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = HT94948NDD;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = Siren/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Sabintsev.Siren;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8EF9F85E224EACA500B20545 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = HT94948NDD;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = Siren/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Sabintsev.Siren;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+>>>>>>> Updated to 5.3.0
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

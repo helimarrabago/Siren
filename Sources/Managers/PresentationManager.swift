@@ -225,10 +225,18 @@ private extension PresentationManager {
 // MARK: - Helpers
 
 private extension PresentationManager {
+<<<<<<< HEAD
     private func createWindow() -> UIWindow? {
         var window = UIWindow()
         if #available(iOS 13.0, *) {
             guard let windowScene = getFirstForegroundScene() else { return nil }
+=======
+    private func createWindow() -> UIWindow {
+        var window = UIWindow()
+        if #available(iOS 13.0, *) {
+            guard let windowScene = UIApplication.shared.connectedScenes
+                .first(where: { $0.activationState == .foregroundActive }) as? UIWindowScene else { return UIWindow() }
+>>>>>>> Updated to 5.3.0
             window = UIWindow(windowScene: windowScene)
         } else {
             window = UIWindow(frame: UIScreen.main.bounds)

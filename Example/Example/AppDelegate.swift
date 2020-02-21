@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        defaultExample()
 //        defaultExampleUsingCompletionHandler()
 //        manualExampleWithCompletionHandler()
-//        minimalCustomizationPresentationExample()
+        minimalCustomizationPresentationExample()
 //        forceLocalizationCustomizationPresentationExample()
 //        customMessagingPresentationExample()
 //        annoyingRuleExample()
